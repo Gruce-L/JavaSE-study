@@ -1,0 +1,96 @@
+public class DataType{
+
+	//Java中独有的类型：byte，占一个字节，char为两个字节，-128 ~ 127
+	public static void main6(String[] args){
+		byte b =12;
+		byte d = Byte.MAX_VALUE + 1;
+		
+		System.out.println(b);
+		//+1导致类型提升，println默认是以整型进行打印的，所以结果不会是-128的
+		//是128
+		System.out.println(d);
+		
+		//byte赋值的最大值是127，
+		byte e = 130;
+		System.out.println(e);
+		
+	}
+	
+	//short类型占两个字节
+	public static void main7(String[] args){
+		short sh = 12;
+		System.out.println(sh);
+		System.out.println(Short.MAX_VALUE);	//32767
+		System.out.println(Short.MIN_VALUE);	//-32768
+		
+	}
+	
+	//布尔类型：Boolean
+	//注：在Java类型当中，布尔类型没有明确大小，只有两个取值，true和false
+	public static void main7(String[] args){
+		boolean flag = false;
+		System.out.println(flag);
+		
+	}
+
+	//讲解长整型
+	public static void main1(String[] args){
+		
+		//在Java long类型中，必须要将其在后面加L，以区分整型常量
+		long a = 10L;
+		int b = 10;
+		int c = 20;
+		
+		System.out.println(b + c);		//30
+		//haha1020：因为里面有字符串，需要进行类型聚合
+		System.out.println("haha" + b + c);		
+		
+	}
+	
+	//String[] args
+	public static void main2(String[] args){
+		for(int i = 0; i < args.length; i++){
+			System.out.println(args[i]);
+		}
+		System.out.println("kaixin");
+		//运行结果：只输出了kaixin；如果在输出过程当中写了gaobo is cool，则会分行打印
+		//gaobo
+		//is
+		//cool
+		//kaixin
+		
+	}
+	
+	//双精度浮点型，使用double进行定义，Java当中的double占8个字节
+	public static void main3(String[] args){
+		double b = 12.5;		//默认就是双精度类型
+		System.out.println(d);
+		
+		//double的包装类是Double
+		System.out.println(Double.MAX_VALUE);
+		System.out.println(Double.MIN_VALUE);
+		
+		
+	}
+	
+	//单精度浮点类型：4个字节，对应的包装类时是Float，其含很多的内嵌方法
+	//Java中，不允许把一个double类型的值，直接赋值给float，否则编译错误；
+	//原因：Java是一个强类型语言，C是一个弱类型语言
+	//在Java中，没有所谓的0是假，非0是真
+	public static void main4(String[] args){
+		float f = 12.3f;
+		System.out.println(f);
+		
+		
+	}
+	
+	//字符数据类型：char，占两个字节，C中占一个字节
+	public static void main5(String[] args){
+		char c = 'a';
+		char d = 97;
+		System.out.println(c);
+		System.out.println(d);
+		
+	}
+	
+}

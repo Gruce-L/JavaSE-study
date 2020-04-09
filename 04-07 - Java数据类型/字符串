@@ -1,0 +1,29 @@
+
+//字符串数据类型
+public static void main1(String[] args){
+	String str1 = "hello";
+	System.out.println(str1);
+	
+	//打印一个"hello"
+	String str2 = "\"hello\"";
+	System.out.println(str2);
+	//打印一个\\hello\\
+	String str = "\\\\hello\\\\";
+	System.out.println(str3);
+	
+}
+
+//整形转换成字符串的两种形式
+public static void main2(String[] args){
+	int num = 10;
+	String str1 = num + "";
+	String str2 = String.valueOf(num);
+	
+}
+
+//字符串转换成整型，前提是字符串中只有数字
+public static void main3(String[] args){
+	String str = "10";
+	int num = Integer.parseInt(str);
+	
+}
